@@ -1,0 +1,53 @@
+// ==========================================================================
+// _variables.scss
+// ==========================================================================
+
+// ====================================
+// breakpoints
+// ====================================
+
+$media-mobile: 600px;
+$media-tablet-portrait: 768px;
+$media-tablet-landscape: 992px;
+$media-desktop: 1200px;
+
+//$layout-max-width: 1200px;
+$grid-gap: 20px;
+
+// ====================================
+// breakpoints
+// ====================================
+
+// https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+
+@mixin media-size($range) {
+    @if $range == mobile {
+        @media screen and (max-width: #{$media-mobile - 1}) { @content; }
+    } @else if $range == tablet-landscape {
+        @media screen and (min-width: $media-tablet-landscape) { @content; }
+    } @else if $range == tablet-portrait {
+        @media screen and (min-width: $media-tablet-portrait) { @content; }
+    } @else if $range == desktop {
+        @media screen and (min-width: $media-desktop) { @content; }
+    }
+}
+
+// ====================================
+// colors
+// ====================================
+
+$brand-color:         #ab191c !default;
+$interactive-color:   $brand-color !default;
+$text-color:          #333333 !default;
+$square-color:        #878787 !default;
+$bkg-highlight-color: #f7f5f2 !default;
+$bkg-footer-color:    #333333 !default;
+
+// ====================================
+// fonts
+// ====================================
+
+$primary-font : 'Barlow', helvetica, sans-serif;
+//font-family: 'Barlow', sans-serif;
+//font-family: 'Barlow Condensed', sans-serif;
+//font-family: 'Saira Condensed', sans-serif;

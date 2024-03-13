@@ -1,0 +1,142 @@
+// ==========================================================================
+// _base.scss
+// ==========================================================================
+
+// ====================================
+// elements
+// ====================================
+
+html {
+    color: $text-color;
+    font-size: 1em;
+    height: 100%;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+body {
+    font-size: 1em;
+    font-family: $primary-font;
+    min-height: 100vh; /* force la hauteur de body */
+    position: relative; /* impose un positionnement */
+
+    text-rendering: optimizeLegibility !important; /* lissage des fontes */
+    -webkit-font-smoothing: antialiased !important; /* lissage des fontes */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+}
+
+
+h1 {
+    color: white;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.625rem;
+}
+
+header h2 {
+    margin: 0;
+}
+
+h3 {
+    font-size: 2.1875rem;
+    line-height: 2.1875rem;
+    margin: 40px 0 20px;
+}
+
+h3:before {
+    background-color: $square-color;
+    content: "";
+    display: inline-block;
+    height: 18px;
+    margin-right: 10px;
+    width: 18px;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p, li {
+    line-height: 1.65rem;
+    margin: 10px 0 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+img {
+    height: auto;
+    width: 100%; /* adaptation des images aux conteneurs */
+}
+
+@include media-size(tablet-landscape) {
+    h1 {
+        font-size: 3.125rem;
+        line-height: 3.75rem;
+    }
+
+    h3 {
+        font-size: 2.4375rem;
+        line-height: 2.5rem;
+        margin: 70px 0 30px;
+    }
+
+    h3:before {
+        height: 20px;
+        width: 20px;
+    }
+
+    p, li {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}

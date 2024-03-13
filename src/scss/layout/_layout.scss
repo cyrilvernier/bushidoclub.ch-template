@@ -1,0 +1,43 @@
+// ==========================================================================
+// _layout.scss
+// ==========================================================================
+
+// ====================================
+// regions
+// ====================================
+
+.l-nav-toggler {
+    height: 60px;
+}
+
+@include media-size(tablet-landscape) {
+    .l-nav-toggler {
+        display: none;
+    }
+}
+
+.l-header {
+    margin-bottom: 100px;
+}
+
+@include media-size(tablet-landscape) {
+    .l-header {
+        margin-bottom: 120px;
+    }
+}
+
+.l-preface {
+    margin-bottom: 80px;
+}
+
+.l-main-content {
+    margin-bottom: 80px;
+}
+
+.l-postscript {
+    margin-bottom: 80px;
+}
+
+.l-footer {
+    background-color: $bkg-footer-color;
+}

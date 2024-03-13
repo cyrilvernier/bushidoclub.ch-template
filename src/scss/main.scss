@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+// ====================================
+// tools and mixins
+// ====================================
+
+@import "tools/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+// ====================================
+// base rules
+// ====================================
+
+@import "tools/normalize";
+// @import "tools/sanitize";
+
+/*
+choisir entre normalize et sanitize selon les préférences de développement CSS :
+" normalize.css and sanitize.css correct browser bugs while carefully testing and documenting changes.
+  normalize.css styles adhere to css specifications. sanitize.css styles adhere to common developer expectations and preferences. reset.css unstyles all elements.
+  Both sanitize.css and normalize.css are maintained in sync. " – Jonathan Neal
+*/
+
+@import "base/base";
+
+
+// ====================================
+// layout rules
+// ====================================
+
+@import "layout/layout";
+
+
+// ====================================
+// module rules
+// ====================================
+
+@import "module/module";
+
+
+// ====================================
+// state rules
+// ====================================
+
+//@import "state/state";
+
+
+// ====================================
+// theme rules
+// ====================================
+
+//@import "theme/theme";
+
+
+// ====================================
+// misc
+// ====================================
+
+@import "tools/helper-classes";
+@import "shame";
